@@ -17,9 +17,10 @@ export default function CartItem() {
           <p>₹{item.price}</p>
           <p>Quantity: {item.quantity}</p>
 
-          <button onClick={() => dispatch(increaseQty(item.id))}>+</button>
-          <button onClick={() => dispatch(decreaseQty(item.id))}>-</button>
-          <button onClick={() => dispatch(removeItem(item.id))}>Delete</button>
+          <button onClick={() => dispatch(updateQuantity({ id, type: "increase" }))}>+</button>
+          <button onClick={() => dispatch(updateQuantity({ id, type: "decrease" })))}>-</button>
+          <button onClick={() => dispatch(removeItem(id)
+)}>Delete</button>
         </div>
       ))}
 
