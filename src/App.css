@@ -74,9 +74,10 @@ button:hover {
   background-color: #1b5e20;
 }
 .background-image {
-  background-image: url("/plants-bg.jpg");
+  background-image: url("/images/aloe.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
 }
+
 
