@@ -1,6 +1,10 @@
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/CartSlice";
 import Navbar from "./Navbar";
+import { addItem } from "../redux/CartSlice";
+
+
+
 
 const plants = [
   { id: 1, name: "Aloe Vera", price: 200, category: "Indoor" },
@@ -29,7 +33,7 @@ export default function ProductList() {
         <div className="card" key={p.id}>
           <h3>{p.name}</h3>
           <p>₹{p.price}</p>
-          <button onClick={() => dispatch(addToCart(p))}>
+          <button onClick={() => dispatch(addItem(product)))}>
             Add to Cart
           </button>
         </div>
