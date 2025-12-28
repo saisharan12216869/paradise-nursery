@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import { increaseQty, decreaseQty, removeItem } from "../redux/CartSlice";
+import { updateQuantity, removeItem } from "../redux/CartSlice";
+
 import Navbar from "./Navbar";
 
 export default function CartItem() {
